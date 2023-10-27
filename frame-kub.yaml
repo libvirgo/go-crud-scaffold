@@ -1,0 +1,21 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "frame"
+  namespace: "default"
+  labels:
+    app: "frame"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "frame"
+  template:
+    metadata:
+      labels:
+        app: "frame"
+    spec:
+      containers:
+        - name: "frame"
+          image: "frame:v1"
