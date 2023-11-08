@@ -3,7 +3,7 @@ package utils
 import (
 	"frame/conf"
 	"frame/ent"
-	"frame/redislock"
+	"frame/utils/redislock"
 	"github.com/hibiken/asynq"
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/fx"
